@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<main aria-labelledby="title">
+    <div class="container mt-5">
+        <h1 class="mb-4">A cerca De Mamapachacarranguera</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <img width="500" src="~/Imagen/EwWS.gif" alt="Banda" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2>Nuestra Historia</h2>
+                <p>Somos un grupo de músicos apasionados que se unieron con el objetivo de crear una experiencia musical única para nuestro público. Desde nuestros inicios, nos hemos dedicado a explorar diversos géneros y estilos, creando una mezcla única que refleja nuestra diversidad y creatividad.</p>
+                <h2>Nuestro Enfoque</h2>
+                <p>Nuestra misión es llevar la música a nuevas alturas y emocionar a las audiencias de todo el mundo. Creemos en la colaboración y en la energía que se genera al tocar juntos en perfecta armonía. Cada uno de nosotros aporta sus talentos individuales para crear algo verdaderamente especial.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        // call the tablesorter plugin
+        $("[data-sort=table]").tablesorter({
+            // Sort on the second column, in ascending order
+            sortList: [[1, 0]]
+        });
+    });
+
+</script>

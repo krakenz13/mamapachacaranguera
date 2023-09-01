@@ -1,0 +1,93 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Bienvenidos al Grupo de Músicos</h1>
+            <h6 id="typewriter" class="lead">¡Descubre nuestra música!</h6>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <img src="~/Imagen/MamapachaCaranguera.jpg" class="img-fluid" alt="Grupo de Músicos">
+                <br>
+                <br>
+                <h3> 🎵 Recuerdos Unicos 🎵 </h3>
+                <br>
+                <iframe width="500" height="315" src="https://www.youtube.com/embed/wPSbmPz5vm0?si=Xf3CWl2JqSEUsS0m?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+
+
+            <div class="col-md-6">
+                <h2>Introducion</h2>
+                <p class="bg-light py-3">
+                    ¡Grupo Carranguero"
+
+                    <br> ¡Bienvenidos, este es nuestro grupo MamapachaCarranguera fundado por Hernando Martínez este grupo fue fundando en Garagoa-Boyacá donde las notas se entrelazan y los ritmos te envuelven en una experiencia única! Permítenos presentarte a "Armonía Diversa", un grupo de músicos apasionados y talentosos que están listos para llevar tus sentidos a un viaje inolvidable.
+                    <br />🎵 Nuestra Esencia Musical 🎵
+                    <br> "MamapachaCarranguera" no es simplemente un grupo de músicos, ¡somos un crisol de creatividad y expresión! Cada uno de nosotros aporta un color y una perspectiva única a nuestra música. Desde los acordes íntimos de la guitarra hasta la energía contagiosa de la batería, pasando por las melodías emotivas del piano y las voces que te erizarán la piel, creamos un mosaico musical que trasciende géneros y fronteras.
+                    <br />🌟 Nuestro Repertorio 🌟
+                    <br>Nuestro repertorio es tan diverso como nuestro nombre lo sugiere. Desde piezas clásicas reinventadas hasta composiciones originales que exploran nuevos horizontes, "Armonía Diversa" abarca géneros como la carranga y la música del mundo. Te llevaremos desde momentos de reflexión y nostalgia hasta instantes en los que no podrás evitar mover los pies al ritmo de nuestras canciones.
+                    <br />🎉 Experiencia en Vivo 🎉
+                    <br>Una presentación en vivo de "MamapachaCarranguera" es mucho más que música: es un espectáculo completo. Nuestra energía en el escenario es contagiosa, y nuestra interacción con el público crea una experiencia envolvente y memorable. Cada concierto es una oportunidad para conectarnos con nuestras audiencias, compartiendo emociones a través de las melodías y creando recuerdos duraderos juntos.
+                    <br />🌎 Llegando a Ti 🌎
+                    <br>Nos enorgullece anunciar que "MamapachaCarranguera" está listo para llevar nuestra música a todos los rincones del valle de Tenza . Desde eventos privados y festivales hasta escenarios internacionales, estamos emocionados de compartir nuestra pasión por la música con personas de todas partes. La música trasciende las barreras lingüísticas y culturales, y estamos comprometidos a unir a las personas a través de nuestras interpretaciones.
+                    <br />✨ Únete a Nuestra Aventura Musical ✨
+                    <br>
+                    [Hernando Martinez]
+                    <br>
+                    "MamapachaCarranguera"
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- whatsApp------------->
+    <img class="btn-whatsapp" src="https://clientes.dongee.com/whatsapp.png" width="64" height="64" alt="Whatsapp"
+         onclick="window.location.href='https://wa.me/573143483096?text=Hola!%20Estoy%20interesado%20en%20tu%20servicio'">
+
+
+</main>
+
+<script type="text/javascript">
+    let app = document.getElementById("typewriter");
+    console.log(typewriter)
+
+    let typewriter = new Typewriter(app, {
+      loop: true,
+        delay: 75,
+        
+    });
+
+    typewriter
+      .pauseFor(2500)
+        .typeString("¡Descubre nuestra música!")
+      .pauseFor(200)
+      .deleteChars(10)
+      .start();
+
+
+</script>
+
+<style>
+    /*-- whathsApp---*/
+    img.btn-whatsapp {
+        display: block !important;
+        position: fixed;
+        z-index: 9999999;
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer;
+        border-radius: 100px !important;
+    }
+
+        img.btn-whatsapp:hover {
+            border-radius: 100px !important;
+            -webkit-box-shadow: 0px 0px 15px 0px rgba(7, 94, 84, 1);
+            -moz-box-shadow: 0px 0px 15px 0px rgba(7, 94, 84, 1);
+            box-shadow: 0px 0px 15px 0px rgba(7, 94, 84, 1);
+            transition-duration: 1s;
+        }
+</style>
